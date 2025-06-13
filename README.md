@@ -1,26 +1,13 @@
-# Hand Gesture Control System
+# OpenHouse Detection System
 
-A Python-based hand gesture control system that allows you to control your computer using hand gestures. The system uses MediaPipe for hand tracking and PyAutoGUI for system control.
+This repository contains various detection systems implemented using Python and MediaPipe.
 
-## Features
+## Directory Structure
 
-- Real-time hand tracking
-- Cursor control with index finger
-- Gesture-based actions:
-  - Left click: All fingers up (except thumb)
-  - Right click: Three fingers up (index, middle, ring)
-  - Scroll: Two fingers up (index, middle)
-  - Point mode: One finger up (index)
-- Cursor smoothing for stable movement
-- Screen calibration for accurate cursor positioning
-
-## Requirements
-
-- Python 3.x
-- OpenCV
-- MediaPipe
-- PyAutoGUI
-- NumPy
+- `detection/` - Contains the body pose detection system
+  - `body_pose_detection.py` - Main body pose detection code
+  - `requirements.txt` - Required dependencies
+  - `README.md` - Documentation for body pose detection
 
 ## Installation
 
@@ -29,31 +16,19 @@ A Python-based hand gesture control system that allows you to control your compu
 git clone https://github.com/RonakSinghinda/openhouse.git
 ```
 
-2. Install the required packages:
+2. Navigate to the detection directory:
 ```bash
-pip install opencv-python mediapipe pyautogui numpy
+cd openhouse/detection
+```
+
+3. Install the required packages:
+```bash
+pip install -r requirements.txt
 ```
 
 ## Usage
 
-1. Run the program:
-```bash
-python hand_gesture_control.py
-```
-
-2. Calibrate the system:
-   - Press 'c' to start calibration
-   - Point to the four corners of your screen in order
-   - Press 'c' each time you're pointing to a corner
-
-3. Control your computer:
-   - Move cursor: Move your index finger
-   - Left click: Hold up all fingers except thumb
-   - Right click: Hold up three fingers
-   - Scroll: Hold up two fingers
-   - Point mode: Hold up just index finger
-
-4. Press 'q' to quit the program
+For detailed usage instructions, please refer to the README.md file in each subdirectory.
 
 ## Contributing
 

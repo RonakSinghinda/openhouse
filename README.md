@@ -1,3 +1,64 @@
+# Hand Gesture Control System
+
+A Python-based hand gesture control system that allows you to control your computer using hand gestures. The system uses MediaPipe for hand tracking and PyAutoGUI for system control.
+
+## Features
+
+- Real-time hand tracking
+- Cursor control with index finger
+- Gesture-based actions:
+  - Left click: All fingers up (except thumb)
+  - Right click: Three fingers up (index, middle, ring)
+  - Scroll: Two fingers up (index, middle)
+  - Point mode: One finger up (index)
+- Cursor smoothing for stable movement
+- Screen calibration for accurate cursor positioning
+
+## Requirements
+
+- Python 3.x
+- OpenCV
+- MediaPipe
+- PyAutoGUI
+- NumPy
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/RonakSinghinda/openhouse.git
+```
+
+2. Install the required packages:
+```bash
+pip install opencv-python mediapipe pyautogui numpy
+```
+
+## Usage
+
+1. Run the program:
+```bash
+python hand_gesture_control.py
+```
+
+2. Calibrate the system:
+   - Press 'c' to start calibration
+   - Point to the four corners of your screen in order
+   - Press 'c' each time you're pointing to a corner
+
+3. Control your computer:
+   - Move cursor: Move your index finger
+   - Left click: Hold up all fingers except thumb
+   - Right click: Hold up three fingers
+   - Scroll: Hold up two fingers
+   - Point mode: Hold up just index finger
+
+4. Press 'q' to quit the program
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
 **Real time 3D body pose estimation using MediaPipe**
 
 This is a demo on how to obtain 3D coordinates of body keypoints using MediaPipe and two calibrated cameras. Two cameras are required as there is no way to obtain global 3D coordinates from a single camera. For camera calibration, my package on github [stereo calibrate](https://github.com/TemugeB/python_stereo_camera_calibrate), my blog post on how to stereo calibrate two cameras: [link](https://temugeb.github.io/opencv/python/2021/02/02/stereo-camera-calibration-and-triangulation.html). Alternatively, follow the camera calibration at Opencv documentations: [link](https://docs.opencv.org/3.4/d9/d0c/group__calib3d.html). If you want to know some details on how this code works, take a look at my accompanying blog post here: [link](https://temugeb.github.io/python/computer_vision/2021/06/27/handpose3d.html).

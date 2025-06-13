@@ -1,4 +1,4 @@
-opencv-python>=4.5.0
-mediapipe>=0.8.9
-pyautogui>=0.9.53
-numpy>=1.19.0 
+mediapipe==0.10.8
+opencv-python==4.8.1.78
+numpy==1.26.3
+pyautogui==0.9.54 
